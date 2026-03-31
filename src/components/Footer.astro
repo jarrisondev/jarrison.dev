@@ -1,0 +1,26 @@
+---
+const links = [
+  { href: 'https://github.com/jarrisondev', label: 'GITHUB' },
+  { href: 'https://www.linkedin.com/in/jarrisoncano/', label: 'LINKEDIN' },
+];
+---
+
+<footer class="border-t border-border dark:border-border-dark">
+  <div class="max-w-[1280px] mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-xs text-muted dark:text-muted-dark tracking-wide">
+      &copy; 2026 Jarrison Cano. All rights reserved.
+    </p>
+    <div class="flex items-center gap-6">
+      {links.map(link => (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</footer>

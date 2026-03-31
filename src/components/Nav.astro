@@ -1,0 +1,86 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: 'HOME' },
+  { href: '/about', label: 'ABOUT' },
+  { href: '/work', label: 'WORK' },
+  { href: '/contact', label: 'CONTACT' },
+];
+
+function isActive(href: string, current: string): boolean {
+  if (href === '/') return current === '/';
+  return current.startsWith(href);
+}
+---
+
+<header class="sticky top-0 z-50 backdrop-blur-md bg-surface/80 dark:bg-surface-dark/80 border-b border-border dark:border-border-dark">
+  <nav class="max-w-[1280px] mx-auto px-6 h-[72px] flex items-center justify-between">
+    <a href="/" class="text-sm font-bold tracking-wider uppercase text-on-surface dark:text-on-surface-dark hover:opacity-70 transition-opacity">
+      Jarrison Cano
+    </a>
+
+    <div class="flex items-center gap-8">
+      <ul class="hidden md:flex items-center gap-8">
+        {links.map(link => (
+          <li>
+            <a
+              href={link.href}
+              class:list={[
+                'text-xs font-medium tracking-widest uppercase transition-all',
+                isActive(link.href, currentPath)
+                  ? 'text-on-surface dark:text-on-surface-dark underline underline-offset-4 decoration-1'
+                  : 'text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark',
+              ]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <ThemeToggle />
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-on-surface dark:text-on-surface-dark"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border dark:border-border-dark">
+    <ul class="flex flex-col px-6 py-4 gap-4">
+      {links.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              'text-xs font-medium tracking-widest uppercase',
+              isActive(link.href, currentPath)
+                ? 'text-on-surface dark:text-on-surface-dark underline underline-offset-4 decoration-1'
+                : 'text-muted dark:text-muted-dark',
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

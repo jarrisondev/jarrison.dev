@@ -1,52 +1,98 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const categories = [
   {
-    title: t('about.competencies.frontend'),
-    skills: ['React / Next.js / React Native', 'Astro / SvelteKit / Vue / Qwik', 'React Flow / Recharts', 'TanStack Query / Redux / Zustand', 'Tailwind CSS / shadcn/ui', 'PWA (Workbox, Push Notifications)'],
+    title: t("about.competencies.frontend"),
+    skills: [
+      "React / Next.js / React Native",
+      "Astro / SvelteKit / Vue / Qwik",
+      "React Flow / Recharts",
+      "TanStack Query / Redux / Zustand",
+      "Tailwind CSS / shadcn/ui",
+      "PWA (Workbox, Push Notifications)",
+    ],
   },
   {
-    title: t('about.competencies.backend'),
-    skills: ['Django REST Framework', 'Spring Boot', 'NestJS / Node.js / Express', 'Supabase (Edge Functions, Auth, RLS)', 'REST API Design'],
+    title: t("about.competencies.backend"),
+    skills: [
+      "Django REST Framework",
+      "Spring Boot",
+      "NestJS / Node.js / Express",
+      "Supabase (Edge Functions, Auth, RLS)",
+      "REST API Design",
+    ],
   },
   {
-    title: t('about.competencies.cloud'),
-    skills: ['Azure (Static Web Apps, Functions, RBAC, AI Search)', 'AWS / GCP', 'Docker', 'GitHub Actions / CI/CD', 'Vercel'],
+    title: t("about.competencies.cloud"),
+    skills: [
+      "Azure (Static Web Apps, Functions, RBAC, AI Search)",
+      "AWS / GCP",
+      "Docker",
+      "GitHub Actions / CI/CD",
+      "Cloudflare",
+    ],
   },
   {
-    title: t('about.competencies.data'),
-    skills: ['PostgreSQL', 'MongoDB', 'SQL Server', 'Prisma / Supabase', 'Vector Search / Embeddings'],
+    title: t("about.competencies.data"),
+    skills: [
+      "PostgreSQL",
+      "MongoDB",
+      "SQL Server",
+      "Prisma / Supabase",
+      "Vector Search / Embeddings",
+    ],
   },
   {
-    title: t('about.competencies.orchestration'),
-    skills: ['Agile / Scrum', 'Code Reviews', 'Technical Mentoring', 'Team Leadership (5 engineers)', 'International Collaboration (4 countries)'],
+    title: t("about.competencies.orchestration"),
+    skills: [
+      "Agile / Scrum",
+      "Code Reviews",
+      "Technical Mentoring",
+      "Team Leadership (5 engineers)",
+      "International Collaboration (4 countries)",
+    ],
   },
   {
-    title: t('about.competencies.specialized'),
-    skills: ['UI Performance (gigabyte-scale datasets)', 'Interactive Diagramming (React Flow)', 'Canvas APIs (Excalidraw)', 'AI Integration (Claude / Anthropic API)', 'GIS / Mapping (Mapbox GL JS)', 'Payment Systems (Stripe, MercadoPago)'],
+    title: t("about.competencies.specialized"),
+    skills: [
+      "UI Performance (gigabyte-scale datasets)",
+      "Interactive Diagramming (React Flow)",
+      "Canvas APIs (Excalidraw)",
+      "AI Integration (Claude / Anthropic API)",
+      "GIS / Mapping (Mapbox GL JS)",
+      "Payment Systems (Stripe, MercadoPago)",
+    ],
   },
 ];
 ---
 
-<section class="max-w-[1280px] mx-auto px-6 py-12 md:py-20 border-t border-border dark:border-border-dark">
-  <p class="animate-in text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-10 md:mb-16">
-    {t('about.competencies.label')}
+<section
+  class="max-w-[1280px] mx-auto px-6 py-12 md:py-20 border-t border-border dark:border-border-dark"
+>
+  <p
+    class="animate-in text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-10 md:mb-16"
+  >
+    {t("about.competencies.label")}
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-    {categories.map(cat => (
-      <div class="animate-in">
-        <h3 class="text-sm font-semibold tracking-widest uppercase mb-6">{cat.title}</h3>
-        <ul class="flex flex-col gap-2">
-          {cat.skills.map(skill => (
-            <li class="text-sm text-muted dark:text-muted-dark">{skill}</li>
-          ))}
-        </ul>
-      </div>
-    ))}
+    {
+      categories.map((cat) => (
+        <div class="animate-in">
+          <h3 class="text-sm font-semibold tracking-widest uppercase mb-6">
+            {cat.title}
+          </h3>
+          <ul class="flex flex-col gap-2">
+            {cat.skills.map((skill) => (
+              <li class="text-sm text-muted dark:text-muted-dark">{skill}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
   </div>
 </section>

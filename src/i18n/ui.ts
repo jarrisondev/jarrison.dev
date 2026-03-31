@@ -12,7 +12,7 @@ export const ui = {
     // Meta
     'meta.title': 'Jarrison Cano — Software Engineer',
     'meta.description':
-      'Full-stack Software Engineer. 60+ open source projects. Building production platforms from Medellín for the world.',
+      'Full-stack Software Engineer. 60+ open source contributions. Building production platforms from Medellín for the world.',
 
     // Nav
     'nav.home': 'HOME',
@@ -23,7 +23,7 @@ export const ui = {
     // Home — Hero
     'home.hero.subtitle': 'Software Engineer',
     'home.hero.description':
-      '100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, maintain 60+ open source projects, and contribute to the developer community across Latin America.',
+      '100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, have contributed to 60+ open source projects, and I\'m an active part of the developer community across Latin America.',
 
     // Home — Experience
     'home.experience.heading': '01 / Professional Experience',
@@ -65,7 +65,7 @@ export const ui = {
     'about.hero.p1':
       "I'm Jarrison Cano. I take products from zero to production — frontend, backend, infrastructure, CI/CD. I've done it across energy, food tech, logistics, and fintech. I care as much about why we're building something as how.",
     'about.hero.p2':
-      "Outside of work, I maintain 60+ open source repos, contribute to community projects like svgl and La Velada Web, and I'm part of several developer organizations across Latin America. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
+      "Outside of work, I've contributed to 60+ open source projects, including La Velada Web and community platforms in the Afordin ecosystem. I'm part of several developer organizations across Latin America. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
 
     // About — Philosophy
     'about.philosophy.label': 'Technical Philosophy',
@@ -77,7 +77,7 @@ export const ui = {
       'I specialize in interfaces that handle heavy data without degrading the experience. At Dash Energy, I optimized the frontend multiple times to render gigabytes of well production data — virtualization, lazy loading, intelligent pagination. The goal is always: the user never notices the complexity.',
     'about.philosophy.03.title': 'Open Source by Nature',
     'about.philosophy.03.description':
-      '60+ public repos, contributor to community projects, member of 7 developer organizations. I work daily across time zones with teams in France, the US, Argentina, and Colombia. I believe the best code is written in the open, and the best teams are the ones that share what they learn.',
+      '60+ open source contributions, active in community projects, and member of several developer organizations. I work daily across time zones with teams in France, the US, Argentina, and Colombia. I believe the best code is written in the open, and the best teams are the ones that share what they learn.',
     'about.philosophy.suffix': 'Philosophy',
 
     // About — Competencies
@@ -141,7 +141,7 @@ export const ui = {
     // Meta
     'meta.title': 'Jarrison Cano — Ingeniero de Software',
     'meta.description':
-      'Ingeniero de Software fullstack. 60+ proyectos open source. Desde Medellín para el mundo.',
+      'Ingeniero de Software fullstack. 60+ contribuciones open source. Desde Medellín para el mundo.',
 
     // Nav
     'nav.home': 'INICIO',
@@ -152,7 +152,7 @@ export const ui = {
     // Home — Hero
     'home.hero.subtitle': 'Ingeniero de Software',
     'home.hero.description':
-      'Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, mantengo 60+ proyectos open source y soy parte activa de la comunidad developer latinoamericana.',
+      'Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, he contribuido a 60+ proyectos open source y soy parte activa de la comunidad developer latinoamericana.',
 
     // Home — Experience
     'home.experience.heading': '01 / Experiencia Profesional',
@@ -194,7 +194,7 @@ export const ui = {
     'about.hero.p1':
       'Soy Jarrison Cano. Llevo productos de cero a producción — frontend, backend, infraestructura, CI/CD. Lo he hecho en energía, food tech, logística y fintech. Me importa tanto el por qué construimos algo como el cómo.',
     'about.hero.p2':
-      'Fuera del trabajo, mantengo 60+ repos open source, contribuyo a proyectos comunitarios como svgl y La Velada Web, y soy parte de varias organizaciones de desarrolladores en Latinoamérica. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
+      'Fuera del trabajo, he contribuido a 60+ proyectos open source, incluyendo La Velada Web y plataformas comunitarias del ecosistema Afordin. Soy parte de varias organizaciones de desarrolladores en Latinoamérica. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
 
     // About — Philosophy
     'about.philosophy.label': 'Filosofía Técnica',
@@ -206,7 +206,7 @@ export const ui = {
       'Me especializo en interfaces que manejan datos pesados sin degradar la experiencia. En Dash Energy, optimicé el frontend múltiples veces para renderizar gigabytes de datos de producción de pozos — virtualización, lazy loading, paginación inteligente. El objetivo siempre es: que el usuario nunca note la complejidad.',
     'about.philosophy.03.title': 'Open Source por Naturaleza',
     'about.philosophy.03.description':
-      '60+ repos públicos, contribuidor a proyectos comunitarios, miembro de 7 organizaciones de desarrolladores. Trabajo diariamente a través de zonas horarias con equipos en Francia, EE.UU., Argentina y Colombia. Creo que el mejor código se escribe en abierto, y los mejores equipos son los que comparten lo que aprenden.',
+      '60+ contribuciones open source, activo en proyectos comunitarios y miembro de varias organizaciones de desarrolladores. Trabajo diariamente a través de zonas horarias con equipos en Francia, EE.UU., Argentina y Colombia. Creo que el mejor código se escribe en abierto, y los mejores equipos son los que comparten lo que aprenden.',
     'about.philosophy.suffix': 'Filosofía',
 
     // About — Competencies

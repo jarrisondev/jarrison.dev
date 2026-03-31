@@ -10,9 +10,9 @@ export const defaultLang: Lang = 'en';
 export const ui = {
   en: {
     // Meta
-    'meta.title': 'Jarrison Cano — Software Engineer & Tech Lead',
+    'meta.title': 'Jarrison Cano — Software Engineer',
     'meta.description':
-      'Software Engineer building production platforms for the energy industry. Leading teams across 4 countries. Based in Medellín, working globally.',
+      'Full-stack Software Engineer. 60+ open source projects. Building production platforms from Medellín for the world.',
 
     // Nav
     'nav.home': 'HOME',
@@ -21,16 +21,16 @@ export const ui = {
     'nav.contact': 'CONTACT',
 
     // Home — Hero
-    'home.hero.subtitle': 'Software Engineer & Tech Lead',
+    'home.hero.subtitle': 'Software Engineer',
     'home.hero.description':
-      'I build platforms that handle real data for real industries. Currently leading frontend at Dash Energy, where 100+ petroleum engineers across 4 countries rely on what my team ships every day.',
+      '100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, maintain 60+ open source projects, and contribute to the developer community across Latin America.',
 
     // Home — Experience
     'home.experience.heading': '01 / Professional Experience',
-    'home.experience.dash.role': 'SOFTWARE ENGINEER & TECH LEAD',
+    'home.experience.dash.role': 'SOFTWARE ENGINEER',
     'home.experience.dash.period': '2022 — PRESENT',
     'home.experience.dash.description':
-      'Leading a frontend team building a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Integrated cross-platform with Kappa Engineering (France & USA). The platform serves 100+ engineers across Argentina, Brazil, Colombia, and the USA. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.',
+      'Building a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Leading the frontend team and integrating cross-platform with Kappa Engineering (France & USA). The platform serves 100+ engineers across Argentina, Brazil, Colombia, and the USA. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.',
     'home.experience.quantil.role': 'FRONTEND DEVELOPER (CONTRACT)',
     'home.experience.quantil.period': '2023 — 2024',
     'home.experience.quantil.description':
@@ -47,13 +47,13 @@ export const ui = {
     // Home — Projects
     'home.projects.heading': '02 / Featured Projects',
     'home.projects.rundev.description':
-      'A full-stack AI running coach I built for myself and now use daily. Syncs with Garmin, generates personalized weekly training plans using Claude Sonnet 4, and adjusts based on actual performance. React Router + Supabase Edge Functions + GCP.',
-    'home.projects.viewCaseStudy': 'View Case Study',
+      'A PWA I built and use daily as my personal running coach. Claude Sonnet 4 generates weekly training plans adapted to my performance, upcoming races, and recovery needs. Strava and Garmin sync automatically — I can even log runs by taking a photo of my watch (Claude Vision extracts the metrics). Includes weekly AI retrospectives, automatic periodization with tapering, progression charts with linear regression, and push notifications. 9 Edge Functions, 8 database tables, fully installable offline.',
+    'home.projects.rundev.cta': 'Visit rundev.app',
 
     // Home — Skills
     'home.skills.heading': '03 / Technical Stack',
-    'home.skills.coreStack': 'Core Stack',
-    'home.skills.infrastructure': 'Infrastructure',
+    'home.skills.languages': 'Languages & Frameworks',
+    'home.skills.infrastructure': 'Infrastructure & Tools',
     'home.skills.expert': 'Expert',
     'home.skills.advanced': 'Advanced',
     'home.skills.proficient': 'Proficient',
@@ -62,9 +62,9 @@ export const ui = {
     'about.hero.label': 'Biography \u00B7 Manifest',
     'about.hero.title': 'I build products, not just features.',
     'about.hero.p1':
-      "I'm Jarrison Cano. I take products from zero to production — architecture decisions, team coordination, deployment pipelines, client conversations. I've done it multiple times across different industries, and I care as much about why we're building something as how.",
+      "I'm Jarrison Cano. I take products from zero to production — frontend, backend, infrastructure, CI/CD. I've done it across energy, food tech, logistics, and fintech. I care as much about why we're building something as how.",
     'about.hero.p2':
-      "Most of my work sits at the intersection of complex data and user-facing interfaces. At Dash Energy, that means rendering gigabytes of production data without the UI breaking a sweat. At GourmetApp, it meant scaling a content platform to 400+ restaurants. I lead a team of 5, collaborate with engineers in France and the US, and still write code every day.",
+      "Outside of work, I maintain 60+ open source repos, contribute to community projects like svgl and La Velada Web, and I'm part of several developer organizations across Latin America. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
 
     // About — Philosophy
     'about.philosophy.label': 'Technical Philosophy',
@@ -74,9 +74,9 @@ export const ui = {
     'about.philosophy.02.title': 'Performance Where It Counts',
     'about.philosophy.02.description':
       'I specialize in interfaces that handle heavy data without degrading the experience. At Dash Energy, I optimized the frontend multiple times to render gigabytes of well production data — virtualization, lazy loading, intelligent pagination. The goal is always: the user never notices the complexity.',
-    'about.philosophy.03.title': 'International by Default',
+    'about.philosophy.03.title': 'Open Source by Nature',
     'about.philosophy.03.description':
-      'I work daily across time zones with teams in France, the United States, Argentina, and Colombia. Leading 5 engineers, running code reviews, mentoring juniors, and coordinating sprints across distributed teams. Clear async communication is not optional — it is the work.',
+      '60+ public repos, contributor to community projects, member of 7 developer organizations. I work daily across time zones with teams in France, the US, Argentina, and Colombia. I believe the best code is written in the open, and the best teams are the ones that share what they learn.',
     'about.philosophy.suffix': 'Philosophy',
 
     // About — Competencies
@@ -93,8 +93,7 @@ export const ui = {
     'about.education.degree1': 'Ingeniería en Software (B.Eng.)',
     'about.education.school1': 'Tecnológico de Antioquia (TdeA)',
     'about.education.period1': '2023 — PRESENT (8th Semester)',
-    'about.education.details1':
-      'Relevant coursework: Advanced Databases, Physics, Big Data (MongoDB, CRISP-DM), Legal & Ethical Aspects of Software',
+    'about.education.details1': '',
     'about.education.degree2': 'Tecnología en Diseño y Desarrollo Web',
     'about.education.school2': 'Tecnológico de Antioquia (TdeA)',
     'about.education.period2': '2020 — 2024',
@@ -102,8 +101,8 @@ export const ui = {
 
     // About — CTA
     'about.cta.text':
-      'Currently building high-performance platforms for the energy industry and exploring AI-driven coaching with wearable data.',
-    'about.cta.link': 'View My Work',
+      'Currently building high-performance platforms for the energy industry, exploring AI-driven coaching with wearable data, and contributing to open source.',
+    'about.cta.link': 'Get In Touch',
 
     // Work
     'work.label': 'Work',
@@ -115,7 +114,7 @@ export const ui = {
     'contact.hero.label': 'Get In Touch',
     'contact.hero.title': "Let's build something.",
     'contact.hero.description':
-      'Open to freelance partnerships and full-time technical leadership roles. I work best on complex frontend systems, data-heavy interfaces, and products that need to be built from scratch.',
+      'Have a product that needs building from scratch? A frontend drowning in data? A team that needs a developer who owns the whole stack? I want to hear about it.',
 
     // Contact — Form
     'contact.form.name': 'Your Name',
@@ -139,9 +138,9 @@ export const ui = {
 
   es: {
     // Meta
-    'meta.title': 'Jarrison Cano — Ingeniero de Software & Líder Técnico',
+    'meta.title': 'Jarrison Cano — Ingeniero de Software',
     'meta.description':
-      'Ingeniero de Software construyendo plataformas de producción para la industria energética. Liderando equipos en 4 países. Basado en Medellín, trabajando globalmente.',
+      'Ingeniero de Software fullstack. 60+ proyectos open source. Desde Medellín para el mundo.',
 
     // Nav
     'nav.home': 'INICIO',
@@ -150,16 +149,16 @@ export const ui = {
     'nav.contact': 'CONTACTO',
 
     // Home — Hero
-    'home.hero.subtitle': 'Ingeniero de Software & Líder Técnico',
+    'home.hero.subtitle': 'Ingeniero de Software',
     'home.hero.description':
-      'Construyo plataformas que manejan datos reales para industrias reales. Actualmente liderando el frontend en Dash Energy, donde más de 100 ingenieros petroleros en 4 países dependen de lo que mi equipo entrega cada día.',
+      'Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, mantengo 60+ proyectos open source y soy parte activa de la comunidad developer latinoamericana.',
 
     // Home — Experience
     'home.experience.heading': '01 / Experiencia Profesional',
-    'home.experience.dash.role': 'INGENIERO DE SOFTWARE & LÍDER TÉCNICO',
+    'home.experience.dash.role': 'INGENIERO DE SOFTWARE',
     'home.experience.dash.period': '2022 — PRESENTE',
     'home.experience.dash.description':
-      'Liderando un equipo frontend construyendo una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Integración cross-platform con Kappa Engineering (Francia y EE.UU.). La plataforma sirve a más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.',
+      'Construyendo una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Liderando el equipo frontend e integrando cross-platform con Kappa Engineering (Francia y EE.UU.). La plataforma sirve a más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.',
     'home.experience.quantil.role': 'DESARROLLADOR FRONTEND (CONTRATO)',
     'home.experience.quantil.period': '2023 — 2024',
     'home.experience.quantil.description':
@@ -176,13 +175,13 @@ export const ui = {
     // Home — Projects
     'home.projects.heading': '02 / Proyectos Destacados',
     'home.projects.rundev.description':
-      'Un entrenador de running con IA full-stack que construí para mí y ahora uso diariamente. Se sincroniza con Garmin, genera planes de entrenamiento semanales personalizados usando Claude Sonnet 4, y se ajusta basándose en el rendimiento real. React Router + Supabase Edge Functions + GCP.',
-    'home.projects.viewCaseStudy': 'Ver Caso de Estudio',
+      'Una PWA que construí y uso diariamente como mi entrenador personal de running. Claude Sonnet 4 genera planes semanales adaptados a mi rendimiento, carreras próximas y necesidades de recuperación. Strava y Garmin se sincronizan automáticamente — puedo registrar entrenamientos tomando una foto de mi reloj (Claude Vision extrae las métricas). Incluye retrospectivas semanales con IA, periodización automática con tapering, gráficas de progresión con regresión lineal y push notifications. 9 Edge Functions, 8 tablas en base de datos, instalable y offline.',
+    'home.projects.rundev.cta': 'Visitar rundev.app',
 
     // Home — Skills
     'home.skills.heading': '03 / Stack Técnico',
-    'home.skills.coreStack': 'Stack Principal',
-    'home.skills.infrastructure': 'Infraestructura',
+    'home.skills.languages': 'Lenguajes & Frameworks',
+    'home.skills.infrastructure': 'Infraestructura & Herramientas',
     'home.skills.expert': 'Experto',
     'home.skills.advanced': 'Avanzado',
     'home.skills.proficient': 'Competente',
@@ -191,9 +190,9 @@ export const ui = {
     'about.hero.label': 'Biografía \u00B7 Manifiesto',
     'about.hero.title': 'Construyo productos, no solo features.',
     'about.hero.p1':
-      'Soy Jarrison Cano. Llevo productos de cero a producción — decisiones de arquitectura, coordinación de equipo, pipelines de despliegue, conversaciones con clientes. Lo he hecho múltiples veces en diferentes industrias, y me importa tanto el por qué construimos algo como el cómo.',
+      'Soy Jarrison Cano. Llevo productos de cero a producción — frontend, backend, infraestructura, CI/CD. Lo he hecho en energía, food tech, logística y fintech. Me importa tanto el por qué construimos algo como el cómo.',
     'about.hero.p2':
-      'La mayor parte de mi trabajo está en la intersección entre datos complejos e interfaces de usuario. En Dash Energy, eso significa renderizar gigabytes de datos de producción sin que la UI se inmute. En GourmetApp, significó escalar una plataforma de contenido a más de 400 restaurantes. Lidero un equipo de 5, colaboro con ingenieros en Francia y EE.UU., y sigo escribiendo código todos los días.',
+      'Fuera del trabajo, mantengo 60+ repos open source, contribuyo a proyectos comunitarios como svgl y La Velada Web, y soy parte de varias organizaciones de desarrolladores en Latinoamérica. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
 
     // About — Philosophy
     'about.philosophy.label': 'Filosofía Técnica',
@@ -203,9 +202,9 @@ export const ui = {
     'about.philosophy.02.title': 'Rendimiento Donde Importa',
     'about.philosophy.02.description':
       'Me especializo en interfaces que manejan datos pesados sin degradar la experiencia. En Dash Energy, optimicé el frontend múltiples veces para renderizar gigabytes de datos de producción de pozos — virtualización, lazy loading, paginación inteligente. El objetivo siempre es: que el usuario nunca note la complejidad.',
-    'about.philosophy.03.title': 'Internacional por Defecto',
+    'about.philosophy.03.title': 'Open Source por Naturaleza',
     'about.philosophy.03.description':
-      'Trabajo diariamente a través de zonas horarias con equipos en Francia, Estados Unidos, Argentina y Colombia. Liderando 5 ingenieros, haciendo code reviews, mentoreando juniors y coordinando sprints en equipos distribuidos. La comunicación asíncrona clara no es opcional — es el trabajo.',
+      '60+ repos públicos, contribuidor a proyectos comunitarios, miembro de 7 organizaciones de desarrolladores. Trabajo diariamente a través de zonas horarias con equipos en Francia, EE.UU., Argentina y Colombia. Creo que el mejor código se escribe en abierto, y los mejores equipos son los que comparten lo que aprenden.',
     'about.philosophy.suffix': 'Filosofía',
 
     // About — Competencies
@@ -222,8 +221,7 @@ export const ui = {
     'about.education.degree1': 'Ingeniería en Software (B.Eng.)',
     'about.education.school1': 'Tecnológico de Antioquia (TdeA)',
     'about.education.period1': '2023 — PRESENTE (8vo Semestre)',
-    'about.education.details1':
-      'Cursos relevantes: Bases de Datos Avanzadas, Física, Big Data (MongoDB, CRISP-DM), Aspectos Legales y Éticos del Software',
+    'about.education.details1': '',
     'about.education.degree2': 'Tecnología en Diseño y Desarrollo Web',
     'about.education.school2': 'Tecnológico de Antioquia (TdeA)',
     'about.education.period2': '2020 — 2024',
@@ -231,8 +229,8 @@ export const ui = {
 
     // About — CTA
     'about.cta.text':
-      'Actualmente construyendo plataformas de alto rendimiento para la industria energética y explorando entrenamiento impulsado por IA con datos de wearables.',
-    'about.cta.link': 'Ver Mi Trabajo',
+      'Actualmente construyendo plataformas de alto rendimiento para la industria energética, explorando entrenamiento impulsado por IA con datos de wearables, y contribuyendo al open source.',
+    'about.cta.link': 'Hablemos',
 
     // Work
     'work.label': 'Trabajo',
@@ -244,7 +242,7 @@ export const ui = {
     'contact.hero.label': 'Contacto',
     'contact.hero.title': 'Construyamos algo.',
     'contact.hero.description':
-      'Abierto a alianzas freelance y roles de liderazgo técnico a tiempo completo. Trabajo mejor en sistemas frontend complejos, interfaces con datos pesados, y productos que necesitan construirse desde cero.',
+      'Tienes un producto que necesita construirse desde cero? Un frontend ahogado en datos? Un equipo que necesita a alguien que se adueñe de todo el stack? Quiero saber de tu proyecto.',
 
     // Contact — Form
     'contact.form.name': 'Tu Nombre',

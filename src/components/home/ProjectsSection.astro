@@ -4,7 +4,31 @@ import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const tags = ['REACT 19', 'TYPESCRIPT', 'CLAUDE AI', 'SUPABASE', 'STRAVA', 'GARMIN', 'PWA'];
+const rundevTags = ['REACT 19', 'TYPESCRIPT', 'CLAUDE AI', 'SUPABASE', 'STRAVA', 'GARMIN', 'PWA'];
+
+const ossProjects = [
+  {
+    name: 'La Velada Web',
+    description: lang === 'es'
+      ? 'Web oficial del evento de boxeo más grande de habla hispana organizado por Ibai Llanos.'
+      : 'Official website for the biggest Spanish-speaking boxing event organized by Ibai Llanos.',
+    href: 'https://github.com/midudev/la-velada-web-oficial',
+  },
+  {
+    name: 'Aforshow',
+    description: lang === 'es'
+      ? 'Plataforma web para los eventos de la comunidad Afordin.'
+      : 'Web platform for the Afordin community events.',
+    href: 'https://github.com/afordin/aforshow-2025',
+  },
+  {
+    name: 'Hackafor',
+    description: lang === 'es'
+      ? 'Plataforma del hackathon de programación de la comunidad Afordin.'
+      : 'Programming hackathon platform for the Afordin developer community.',
+    href: 'https://github.com/afordin/hackafor-2',
+  },
+];
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-20">
@@ -19,7 +43,7 @@ const tags = ['REACT 19', 'TYPESCRIPT', 'CLAUDE AI', 'SUPABASE', 'STRAVA', 'GARM
 
     <div class="flex flex-col gap-6">
       <div class="flex flex-wrap gap-2">
-        {tags.map(tag => (
+        {rundevTags.map(tag => (
           <span class="text-[10px] font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-border dark:border-border-dark text-muted dark:text-muted-dark">
             {tag}
           </span>
@@ -39,6 +63,33 @@ const tags = ['REACT 19', 'TYPESCRIPT', 'CLAUDE AI', 'SUPABASE', 'STRAVA', 'GARM
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
         </svg>
       </a>
+    </div>
+  </div>
+
+  <!-- Open Source Contributions -->
+  <div class="mt-20 pt-20 border-t border-border dark:border-border-dark">
+    <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-12">
+      {t('home.projects.oss.heading')}
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {ossProjects.map(project => (
+        <a
+          href={project.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col gap-3 py-6 px-1"
+        >
+          <h4 class="text-base font-bold group-hover:opacity-70 transition-opacity">
+            {project.name}
+          </h4>
+          <p class="text-xs text-muted dark:text-muted-dark leading-relaxed">
+            {project.description}
+          </p>
+          <span class="text-[10px] font-semibold tracking-widest uppercase text-muted dark:text-muted-dark group-hover:text-on-surface dark:group-hover:text-on-surface-dark transition-colors mt-auto">
+            GitHub →
+          </span>
+        </a>
+      ))}
     </div>
   </div>
 </section>

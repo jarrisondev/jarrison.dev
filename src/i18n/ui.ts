@@ -49,6 +49,7 @@ export const ui = {
     'home.projects.rundev.description':
       'A PWA I built and use daily as my personal running coach. Claude Sonnet 4 generates weekly training plans adapted to my performance, upcoming races, and recovery needs. Strava and Garmin sync automatically — I can even log runs by taking a photo of my watch (Claude Vision extracts the metrics). Includes weekly AI retrospectives, automatic periodization with tapering, progression charts with linear regression, and push notifications. 9 Edge Functions, 8 database tables, fully installable offline.',
     'home.projects.rundev.cta': 'Visit rundev.app',
+    'home.projects.oss.heading': 'Open Source Contributions',
 
     // Home — Skills
     'home.skills.heading': '03 / Technical Stack',
@@ -177,6 +178,7 @@ export const ui = {
     'home.projects.rundev.description':
       'Una PWA que construí y uso diariamente como mi entrenador personal de running. Claude Sonnet 4 genera planes semanales adaptados a mi rendimiento, carreras próximas y necesidades de recuperación. Strava y Garmin se sincronizan automáticamente — puedo registrar entrenamientos tomando una foto de mi reloj (Claude Vision extrae las métricas). Incluye retrospectivas semanales con IA, periodización automática con tapering, gráficas de progresión con regresión lineal y push notifications. 9 Edge Functions, 8 tablas en base de datos, instalable y offline.',
     'home.projects.rundev.cta': 'Visitar rundev.app',
+    'home.projects.oss.heading': 'Contribuciones Open Source',
 
     // Home — Skills
     'home.skills.heading': '03 / Stack Técnico',

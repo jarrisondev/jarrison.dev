@@ -1,0 +1,47 @@
+---
+const categories = [
+  {
+    title: 'Frontend',
+    skills: ['React / React Router / React Native', 'React Flow', 'Redux', 'Mapbox GL JS', 'TanStack Query', 'Tailwind CSS / Material UI'],
+  },
+  {
+    title: 'Backend',
+    skills: ['Django REST Framework', 'Node.js', 'Supabase (Edge Functions, Auth, RLS)', 'REST API Design'],
+  },
+  {
+    title: 'Cloud & Infrastructure',
+    skills: ['Azure (Static Web Apps, Functions, RBAC, AI Search)', 'AWS / GCP', 'GitHub Actions', 'Vercel', 'CI/CD Pipelines'],
+  },
+  {
+    title: 'Data',
+    skills: ['PostgreSQL', 'MongoDB', 'SQL Server', 'Supabase', 'N+1 Query Optimization'],
+  },
+  {
+    title: 'Orchestration',
+    skills: ['Agile / Scrum', 'Code Reviews', 'Technical Mentoring', 'Team Leadership (5 engineers)', 'International Collaboration'],
+  },
+  {
+    title: 'Specialized',
+    skills: ['UI Performance Optimization (gigabyte-scale datasets)', 'Interactive Diagramming (React Flow)', 'GIS / Mapping (Mapbox GL JS)', 'AI Integration (Claude Sonnet / Anthropic API)', 'Payment Systems (MercadoPago, Stripe)'],
+  },
+];
+---
+
+<section class="max-w-[1280px] mx-auto px-6 py-20 border-t border-border dark:border-border-dark">
+  <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
+    Core Competencies
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+    {categories.map(cat => (
+      <div>
+        <h3 class="text-sm font-semibold tracking-widest uppercase mb-6">{cat.title}</h3>
+        <ul class="flex flex-col gap-2">
+          {cat.skills.map(skill => (
+            <li class="text-sm text-muted dark:text-muted-dark">{skill}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

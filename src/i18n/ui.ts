@@ -63,7 +63,7 @@ export const ui = {
     'about.hero.label': 'Biography \u00B7 Manifest',
     'about.hero.title': 'I build products, not just features.',
     'about.hero.p1':
-      "I'm Jarrison Cano. I take products from zero to production — frontend, backend, infrastructure, CI/CD. I've done it across energy, food tech, logistics, and fintech. I care as much about why we're building something as how.",
+      "I'm Jarrison Cano. I've been working professionally since I was 18. I take products from zero to production — frontend, backend, infrastructure, CI/CD. I've done it across energy, food tech, logistics, and fintech. I care as much about why we're building something as how.",
     'about.hero.p2':
       "Outside of work, I've contributed to 60+ open source projects, including La Velada Web and community platforms in the Afordin ecosystem. I'm part of several developer organizations across the Spanish-speaking world. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
 
@@ -192,7 +192,7 @@ export const ui = {
     'about.hero.label': 'Biografía \u00B7 Manifiesto',
     'about.hero.title': 'Construyo productos, no solo features.',
     'about.hero.p1':
-      'Soy Jarrison Cano. Llevo productos de cero a producción — frontend, backend, infraestructura, CI/CD. Lo he hecho en energía, food tech, logística y fintech. Me importa tanto el por qué construimos algo como el cómo.',
+      'Soy Jarrison Cano. Trabajo profesionalmente desde los 18 años. Llevo productos de cero a producción — frontend, backend, infraestructura, CI/CD. Lo he hecho en energía, food tech, logística y fintech. Me importa tanto el por qué construimos algo como el cómo.',
     'about.hero.p2':
       'Fuera del trabajo, he contribuido a 60+ proyectos open source, incluyendo La Velada Web y plataformas comunitarias del ecosistema Afordin. Soy parte de varias organizaciones de desarrolladores en comunidades hispanohablantes. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
 

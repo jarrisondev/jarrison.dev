@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   --color-surface: #ffffff;
   --color-surface-alt: #f3f4f6;
   --color-on-surface: #0a0a0a;
-  --color-muted: #374151;
+  --color-muted: #1a1a1a;
   --color-border: #e5e7eb;
 
   --color-surface-dark: #0a0a0a;

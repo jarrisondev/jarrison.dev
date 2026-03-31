@@ -1,0 +1,44 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+
+const heading = lang === 'es' ? 'Lo que dicen de mí' : 'What others say';
+
+const testimonials = [
+  {
+    quote: 'Jarrison es una persona talentosa muy resolutiva y dedicada, siempre dispuesto a apoyar al equipo y con una capacidad de autoaprendizaje admirable.',
+    name: 'Diego Carvajal',
+    role: 'Head of IT',
+    relation: lang === 'es' ? 'Manager directo de Jarrison' : 'Managed Jarrison directly',
+    href: 'https://www.linkedin.com/in/diego-carvajal-633266138/',
+  },
+  {
+    quote: 'He tenido el placer de conocer a Jarrison gracias a destacar en comunidades por ser increíblemente activo y comprometido con su trabajo. Ha participado en el desarrollo de productos de principio a fin mejorando el rendimiento, las interfaces, la experiencia de usuario y sobre todo, compartiendo su conocimiento con el resto del equipo.',
+    name: 'Sara Montagud Rodríguez',
+    role: 'Product Engineer',
+    relation: lang === 'es' ? 'Colaboraron en comunidades' : 'Worked together in communities',
+    href: 'https://www.linkedin.com/in/saramonrod/',
+  },
+];
+---
+
+<section class="max-w-[1280px] mx-auto px-6 py-12 md:py-20 border-t border-border dark:border-border-dark">
+  <p class="animate-in text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-10 md:mb-16">
+    {heading}
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    {testimonials.map((t, i) => (
+      <blockquote class:list={['animate-in flex flex-col gap-6', i === 1 && 'animate-in-delay-1']}>
+        <p class="text-sm text-muted dark:text-muted-dark leading-relaxed italic">
+          "{t.quote}"
+        </p>
+        <footer class="flex flex-col gap-1">
+          <a href={t.href} target="_blank" rel="noopener noreferrer" class="text-sm font-bold hover:opacity-70 transition-opacity">{t.name}</a>
+          <span class="text-xs text-muted dark:text-muted-dark">{t.role} — {t.relation}</span>
+        </footer>
+      </blockquote>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+const experiences = [
+  {
+    company: 'Dash Energy',
+    role: 'SCIENTIFIC SOFTWARE ENGINEER & TECH LEAD',
+    period: '2022 — PRESENT',
+    description: 'Architecting a petroleum production forecasting platform for renewable energy infrastructure. Spearheading the frontend to multi-region data visualization, leading a team of 5 engineers and implementing advanced observability patterns for distributed data pipelines. Serving 100+ engineers across 4 countries (Argentina, Brazil, Colombia, USA), collaborating with international teams in France and the United States.',
+  },
+  {
+    company: 'SimplG',
+    role: 'FRONTEND ENGINEER (FREELANCE)',
+    period: '2025 — PRESENT',
+    description: 'Building the complete frontend for an LPG plant production simulator. Engineers interact with an interactive node-based diagram (React Flow) to modify equipment parameters and streams in real-time, visualizing plant topology with drag-and-drop connections.',
+  },
+  {
+    company: 'Waco Digital Hub',
+    role: 'SOFTWARE ENGINEER',
+    period: '2022 — 2022',
+    description: 'Directed digital transformation initiatives for enterprise clients. Built GourmetApp from scratch — a TikTok-inspired restaurant menu platform adopted by 400+ restaurants in Madrid. Managed a cross-functional team of 4 engineers while working directly with clients on product decisions.',
+  },
+  {
+    company: 'Atalaya S.A.S',
+    role: 'SOFTWARE DEVELOPER',
+    period: '2021 — 2022',
+    description: 'Developed a cross-platform web and mobile application (React + React Native) for cargo tracking across Colombia. Integrated Colombia\'s government RNDC API to automate cargo dispatch processes, replacing manual manifest recording with automated regulatory compliance.',
+  },
+];
+---
+
+<section class="max-w-[1280px] mx-auto px-6 py-20">
+  <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
+    01 / Professional Experience
+  </p>
+
+  <div class="flex flex-col">
+    {experiences.map((exp) => (
+      <article class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-16 py-12 border-t border-border dark:border-border-dark">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold mb-1">{exp.company}</h3>
+          <p class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark">
+            {exp.role}
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-medium tracking-widest text-muted dark:text-muted-dark self-start md:self-end">
+            {exp.period}
+          </span>
+          <p class="text-sm text-muted dark:text-muted-dark leading-relaxed max-w-2xl">
+            {exp.description}
+          </p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

@@ -36,9 +36,9 @@ export const ui = {
     'home.experience.quantil.description':
       'Built a document search application for a major energy sector client. Thousands of vectorized judicial documents, filterable by ID, tax number, city, and custom criteria. React.js frontend on Microsoft Azure infrastructure.',
     'home.experience.waco.role': 'SOFTWARE ENGINEER',
-    'home.experience.waco.period': '2022',
+    'home.experience.waco.period': '2022 — 2023',
     'home.experience.waco.description':
-      'Built GourmetApp from scratch — a TikTok-style restaurant menu platform that grew to 400+ restaurants across Madrid. Handled storage optimization and low-latency content delivery on AWS and Google Cloud. Led a team of 4 from idea to production. Also maintained e-commerce platforms for supermarket chains.',
+      'Built GourmetApp from scratch — a TikTok-style restaurant menu platform that grew to 400+ restaurants across Madrid. Handled storage optimization and low-latency content delivery on AWS and Google Cloud. Led a team of 4 from idea to production. Also maintained e-commerce platforms for supermarket chains. Returned in 2023 as freelance to build the corporate website and an interactive utility calculator for Vatia, a Colombian energy company.',
     'home.experience.atalaya.role': 'SOFTWARE DEVELOPER',
     'home.experience.atalaya.period': '2021 — 2022',
     'home.experience.atalaya.description':
@@ -165,9 +165,9 @@ export const ui = {
     'home.experience.quantil.description':
       'Construí una aplicación de búsqueda de documentos para un cliente importante del sector energético. Miles de documentos judiciales vectorizados, filtrables por cédula, NIT, ciudad y criterios personalizados. Frontend en React.js sobre infraestructura de Microsoft Azure.',
     'home.experience.waco.role': 'INGENIERO DE SOFTWARE',
-    'home.experience.waco.period': '2022',
+    'home.experience.waco.period': '2022 — 2023',
     'home.experience.waco.description':
-      'Construí GourmetApp desde cero — una plataforma estilo TikTok para menús de restaurantes que creció a más de 400 restaurantes en Madrid. Manejé optimización de almacenamiento y entrega de contenido de baja latencia en AWS y Google Cloud. Lideré un equipo de 4 desde la idea hasta producción. También mantuve plataformas e-commerce para cadenas de supermercados.',
+      'Construí GourmetApp desde cero — una plataforma estilo TikTok para menús de restaurantes que creció a más de 400 restaurantes en Madrid. Manejé optimización de almacenamiento y entrega de contenido de baja latencia en AWS y Google Cloud. Lideré un equipo de 4 desde la idea hasta producción. También mantuve plataformas e-commerce para cadenas de supermercados. Volví en 2023 como freelance para construir el sitio corporativo y una calculadora interactiva de servicios para Vatia, empresa del sector energético colombiano.',
     'home.experience.atalaya.role': 'DESARROLLADOR DE SOFTWARE',
     'home.experience.atalaya.period': '2021 — 2022',
     'home.experience.atalaya.description':

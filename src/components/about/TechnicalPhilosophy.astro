@@ -1,25 +1,25 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const items = [
-  {
-    number: '01',
-    title: t('about.philosophy.01.title'),
-    description: t('about.philosophy.01.description'),
-  },
-  {
-    number: '02',
-    title: t('about.philosophy.02.title'),
-    description: t('about.philosophy.02.description'),
-  },
-  {
-    number: '03',
-    title: t('about.philosophy.03.title'),
-    description: t('about.philosophy.03.description'),
-  },
+	{
+		number: "01",
+		title: t("about.philosophy.01.title"),
+		description: t("about.philosophy.01.description"),
+	},
+	{
+		number: "02",
+		title: t("about.philosophy.02.title"),
+		description: t("about.philosophy.02.description"),
+	},
+	{
+		number: "03",
+		title: t("about.philosophy.03.title"),
+		description: t("about.philosophy.03.description"),
+	},
 ];
 ---
 

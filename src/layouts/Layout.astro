@@ -1,25 +1,23 @@
 ---
-import '../styles/global.css';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import type { Lang } from '../i18n/ui';
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import type { Lang } from "../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 interface Props {
-  title?: string;
-  description?: string;
+	title?: string;
+	description?: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const {
-  title = t('meta.title'),
-  description = t('meta.description'),
-} = Astro.props;
+const { title = t("meta.title"), description = t("meta.description") } =
+	Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, 'https://jarrison.dev');
-const ogImage = new URL('/og.png', 'https://jarrison.dev');
+const canonicalUrl = new URL(Astro.url.pathname, "https://jarrison.dev");
+const ogImage = new URL("/og.png", "https://jarrison.dev");
 ---
 
 <!doctype html>

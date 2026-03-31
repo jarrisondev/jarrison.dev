@@ -1,13 +1,25 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const channels = [
-  { label: 'Email', href: 'mailto:jarrison.cano@hotmail.com', display: 'jarrison.cano@hotmail.com' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jarrisoncano/', display: 'linkedin.com/in/jarrisoncano' },
-  { label: 'GitHub', href: 'https://github.com/jarrisondev', display: 'github.com/jarrisondev' },
+	{
+		label: "Email",
+		href: "mailto:jarrison.cano@hotmail.com",
+		display: "jarrison.cano@hotmail.com",
+	},
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/jarrisoncano/",
+		display: "linkedin.com/in/jarrisoncano",
+	},
+	{
+		label: "GitHub",
+		href: "https://github.com/jarrisondev",
+		display: "github.com/jarrisondev",
+	},
 ];
 ---
 

@@ -1,10 +1,11 @@
 ---
-import { getLangFromUrl, getLocalizedPath } from '../../i18n/utils';
+import { getLangFromUrl, getLocalizedPath } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 
-const text = lang === 'es' ? 'Quieres saber más sobre mí?' : 'Want to know more about me?';
-const link = lang === 'es' ? 'Conóceme' : 'About me';
+const text =
+	lang === "es" ? "Quieres saber más sobre mí?" : "Want to know more about me?";
+const link = lang === "es" ? "Conóceme" : "About me";
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-16 md:py-24 border-t border-border dark:border-border-dark">

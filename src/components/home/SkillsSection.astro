@@ -1,24 +1,30 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const languages = [
-  { name: 'React / Next.js / React Native', level: t('home.skills.expert') },
-  { name: 'TypeScript / JavaScript', level: t('home.skills.expert') },
-  { name: 'Astro / SvelteKit / Vue', level: t('home.skills.advanced') },
-  { name: 'Python / Django', level: t('home.skills.advanced') },
-  { name: 'Node.js / NestJS', level: t('home.skills.advanced') },
-  { name: 'Java / Spring Boot / Kotlin', level: t('home.skills.proficient') },
+	{ name: "React / Next.js / React Native", level: t("home.skills.expert") },
+	{ name: "TypeScript / JavaScript", level: t("home.skills.expert") },
+	{ name: "Astro / SvelteKit / Vue", level: t("home.skills.advanced") },
+	{ name: "Python / Django", level: t("home.skills.advanced") },
+	{ name: "Node.js / NestJS", level: t("home.skills.advanced") },
+	{ name: "Java / Spring Boot / Kotlin", level: t("home.skills.proficient") },
 ];
 
 const infrastructure = [
-  { name: 'Azure (Static Web Apps, Functions, RBAC)', level: t('home.skills.advanced') },
-  { name: 'AWS / GCP', level: t('home.skills.proficient') },
-  { name: 'Docker / CI/CD / GitHub Actions', level: t('home.skills.advanced') },
-  { name: 'Supabase / Cloudflare', level: t('home.skills.advanced') },
-  { name: 'PostgreSQL / MongoDB / SQL Server', level: t('home.skills.advanced') },
+	{
+		name: "Azure (Static Web Apps, Functions, RBAC)",
+		level: t("home.skills.advanced"),
+	},
+	{ name: "AWS / GCP", level: t("home.skills.proficient") },
+	{ name: "Docker / CI/CD / GitHub Actions", level: t("home.skills.advanced") },
+	{ name: "Supabase / Cloudflare", level: t("home.skills.advanced") },
+	{
+		name: "PostgreSQL / MongoDB / SQL Server",
+		level: t("home.skills.advanced"),
+	},
 ];
 ---
 

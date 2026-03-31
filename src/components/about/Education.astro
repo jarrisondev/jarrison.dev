@@ -1,22 +1,22 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const entries = [
-  {
-    degree: t('about.education.degree1'),
-    school: t('about.education.school1'),
-    period: t('about.education.period1'),
-    details: t('about.education.details1'),
-  },
-  {
-    degree: t('about.education.degree2'),
-    school: t('about.education.school2'),
-    period: t('about.education.period2'),
-    details: t('about.education.details2'),
-  },
+	{
+		degree: t("about.education.degree1"),
+		school: t("about.education.school1"),
+		period: t("about.education.period1"),
+		details: t("about.education.details1"),
+	},
+	{
+		degree: t("about.education.degree2"),
+		school: t("about.education.school2"),
+		period: t("about.education.period2"),
+		details: t("about.education.details2"),
+	},
 ];
 ---
 

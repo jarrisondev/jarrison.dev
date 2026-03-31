@@ -1,11 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import AboutHero from '../../components/about/AboutHero.astro';
-import TechnicalPhilosophy from '../../components/about/TechnicalPhilosophy.astro';
-import CoreCompetencies from '../../components/about/CoreCompetencies.astro';
-import Education from '../../components/about/Education.astro';
-import CTASection from '../../components/about/CTASection.astro';
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import AboutHero from "../../components/about/AboutHero.astro";
+import CoreCompetencies from "../../components/about/CoreCompetencies.astro";
+import CTASection from "../../components/about/CTASection.astro";
+import Education from "../../components/about/Education.astro";
+import TechnicalPhilosophy from "../../components/about/TechnicalPhilosophy.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import Layout from "../../layouts/Layout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

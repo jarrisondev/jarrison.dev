@@ -1,33 +1,44 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const rundevTags = ['REACT 19', 'TYPESCRIPT', 'CLAUDE AI', 'SUPABASE', 'STRAVA', 'GARMIN', 'PWA'];
+const rundevTags = [
+	"REACT 19",
+	"TYPESCRIPT",
+	"CLAUDE AI",
+	"SUPABASE",
+	"STRAVA",
+	"GARMIN",
+	"PWA",
+];
 
 const ossProjects = [
-  {
-    name: 'La Velada Web',
-    description: lang === 'es'
-      ? 'Sitio oficial del evento de boxeo de Ibai Llanos — millones de visitas en cada edición. Construido con Astro por la comunidad de Midudev.'
-      : 'Official site for Ibai Llanos\' boxing event — millions of visits per edition. Built with Astro by Midudev\'s open source community.',
-    href: 'https://github.com/midudev/la-velada-web-oficial',
-  },
-  {
-    name: 'Aforshow',
-    description: lang === 'es'
-      ? 'Plataforma web del evento anual de la comunidad Afordin. Agenda, speakers, registro y streaming en vivo. Astro + Tailwind.'
-      : 'Web platform for the annual Afordin community event. Schedule, speakers, registration, and live streaming. Astro + Tailwind.',
-    href: 'https://github.com/afordin/aforshow-2025',
-  },
-  {
-    name: 'Hackafor',
-    description: lang === 'es'
-      ? 'Plataforma del hackathon de Afordin — registro de equipos, envío de proyectos y votación. React + UnoCSS, 484+ commits.'
-      : 'Afordin\'s hackathon platform — team registration, project submissions, and voting. React + UnoCSS, 484+ commits.',
-    href: 'https://github.com/afordin/hackafor-2',
-  },
+	{
+		name: "La Velada Web",
+		description:
+			lang === "es"
+				? "Sitio oficial del evento de boxeo de Ibai Llanos — millones de visitas en cada edición. Construido con Astro por la comunidad de Midudev."
+				: "Official site for Ibai Llanos' boxing event — millions of visits per edition. Built with Astro by Midudev's open source community.",
+		href: "https://github.com/midudev/la-velada-web-oficial",
+	},
+	{
+		name: "Aforshow",
+		description:
+			lang === "es"
+				? "Plataforma web del evento anual de la comunidad Afordin. Agenda, speakers, registro y streaming en vivo. Astro + Tailwind."
+				: "Web platform for the annual Afordin community event. Schedule, speakers, registration, and live streaming. Astro + Tailwind.",
+		href: "https://github.com/afordin/aforshow-2025",
+	},
+	{
+		name: "Hackafor",
+		description:
+			lang === "es"
+				? "Plataforma del hackathon de Afordin — registro de equipos, envío de proyectos y votación. React + UnoCSS, 484+ commits."
+				: "Afordin's hackathon platform — team registration, project submissions, and voting. React + UnoCSS, 484+ commits.",
+		href: "https://github.com/afordin/hackafor-2",
+	},
 ];
 ---
 

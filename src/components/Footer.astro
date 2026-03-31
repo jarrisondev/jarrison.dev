@@ -1,12 +1,12 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const links = [
-  { href: 'https://github.com/jarrisondev', label: 'GITHUB' },
-  { href: 'https://www.linkedin.com/in/jarrisoncano/', label: 'LINKEDIN' },
+	{ href: "https://github.com/jarrisondev", label: "GITHUB" },
+	{ href: "https://www.linkedin.com/in/jarrisoncano/", label: "LINKEDIN" },
 ];
 ---
 

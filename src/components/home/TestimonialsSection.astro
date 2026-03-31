@@ -6,39 +6,39 @@ const lang = getLangFromUrl(Astro.url);
 const heading = lang === "es" ? "Lo que dicen de mí" : "What others say";
 
 const testimonials = [
-  {
-    quote:
-      "Jarrison es una persona talentosa muy resolutiva y dedicada, siempre dispuesto a apoyar al equipo y con una capacidad de autoaprendizaje admirable.",
-    name: "Diego Carvajal",
-    role: "Head of IT",
-    relation:
-      lang === "es"
-        ? "Manager directo de Jarrison"
-        : "Managed Jarrison directly",
-    href: "https://www.linkedin.com/in/diego-carvajal-633266138/",
-  },
-  {
-    quote:
-      "Trabajé con Jarrison en Dash y quisiera tenerlo siempre en mi equipo. Gran desarrollador, inteligente y resiliente. Destaco cómo trabaja en equipo, dispuesto a elevar a los jr y ayudarlos a crecer. Excelente profesional y mejor persona.",
-    name: "Ariel Cabello",
-    role: "AI Engineer @ Rappi",
-    relation:
-      lang === "es"
-        ? "Líder técnico de Jarrison en Dash"
-        : "Jarrison's tech lead at Dash",
-    href: "https://www.linkedin.com/in/ariel-cabello-5509b724/",
-  },
-  {
-    quote:
-      "He tenido el placer de conocer a Jarrison gracias a destacar en comunidades por ser increíblemente activo y comprometido con su trabajo. Ha participado en el desarrollo de productos de principio a fin mejorando el rendimiento, las interfaces, la experiencia de usuario y sobre todo, compartiendo su conocimiento con el resto del equipo.",
-    name: "Sara Montagud Rodríguez",
-    role: "Product Engineer",
-    relation:
-      lang === "es"
-        ? "Colaboraron en comunidades"
-        : "Worked together in communities",
-    href: "https://www.linkedin.com/in/saramonrod/",
-  },
+	{
+		quote:
+			"Jarrison es una persona talentosa muy resolutiva y dedicada, siempre dispuesto a apoyar al equipo y con una capacidad de autoaprendizaje admirable.",
+		name: "Diego Carvajal",
+		role: "Head of IT",
+		relation:
+			lang === "es"
+				? "Manager directo de Jarrison"
+				: "Managed Jarrison directly",
+		href: "https://www.linkedin.com/in/diego-carvajal-633266138/",
+	},
+	{
+		quote:
+			"Trabajé con Jarrison en Dash y quisiera tenerlo siempre en mi equipo. Gran desarrollador, inteligente y resiliente. Destaco cómo trabaja en equipo, dispuesto a elevar a los jr y ayudarlos a crecer. Excelente profesional y mejor persona.",
+		name: "Ariel Cabello",
+		role: "AI Engineer @ Rappi",
+		relation:
+			lang === "es"
+				? "Líder técnico de Jarrison en Dash"
+				: "Jarrison's tech lead at Dash",
+		href: "https://www.linkedin.com/in/ariel-cabello-5509b724/",
+	},
+	{
+		quote:
+			"He tenido el placer de conocer a Jarrison gracias a destacar en comunidades por ser increíblemente activo y comprometido con su trabajo. Ha participado en el desarrollo de productos de principio a fin mejorando el rendimiento, las interfaces, la experiencia de usuario y sobre todo, compartiendo su conocimiento con el resto del equipo.",
+		name: "Sara Montagud Rodríguez",
+		role: "Product Engineer",
+		relation:
+			lang === "es"
+				? "Colaboraron en comunidades"
+				: "Worked together in communities",
+		href: "https://www.linkedin.com/in/saramonrod/",
+	},
 ];
 ---
 

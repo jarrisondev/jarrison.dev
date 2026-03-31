@@ -1,19 +1,25 @@
 {
-  "name": "planetary-pulsar",
-  "type": "module",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "astro": "^6.1.2",
-    "tailwindcss": "^4.2.2"
-  }
+	"name": "planetary-pulsar",
+	"type": "module",
+	"version": "0.0.1",
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "biome check --write .",
+		"prepare": "lefthook install"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.2.2",
+		"astro": "^6.1.2",
+		"tailwindcss": "^4.2.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.10",
+		"lefthook": "^2.1.4"
+	}
 }

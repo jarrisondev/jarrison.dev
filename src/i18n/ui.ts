@@ -23,7 +23,7 @@ export const ui = {
     // Home — Hero
     'home.hero.subtitle': 'Software Engineer',
     'home.hero.description':
-      '100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, have contributed to 60+ open source projects, and I\'m an active part of the developer community across Latin America.',
+      '100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, have contributed to 60+ open source projects, and I\'m an active part of the developer community across the Spanish-speaking world.',
 
     // Home — Experience
     'home.experience.heading': '01 / Professional Experience',
@@ -48,7 +48,7 @@ export const ui = {
     'home.projects.heading': '02 / Featured Projects',
     'home.projects.rundev.description':
       'A PWA I built and use daily as my personal running coach. Claude Sonnet 4 generates weekly training plans adapted to my performance, upcoming races, and recovery needs. Strava and Garmin sync automatically — I can even log runs by taking a photo of my watch (Claude Vision extracts the metrics). Includes weekly AI retrospectives, automatic periodization with tapering, progression charts with linear regression, and push notifications. 9 Edge Functions, 8 database tables, fully installable offline.',
-    'home.projects.rundev.cta': 'Visit rundev.app',
+    'home.projects.rundev.cta': 'Visit rundev.pages.dev',
     'home.projects.oss.heading': 'Open Source Contributions',
 
     // Home — Skills
@@ -65,7 +65,7 @@ export const ui = {
     'about.hero.p1':
       "I'm Jarrison Cano. I take products from zero to production — frontend, backend, infrastructure, CI/CD. I've done it across energy, food tech, logistics, and fintech. I care as much about why we're building something as how.",
     'about.hero.p2':
-      "Outside of work, I've contributed to 60+ open source projects, including La Velada Web and community platforms in the Afordin ecosystem. I'm part of several developer organizations across Latin America. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
+      "Outside of work, I've contributed to 60+ open source projects, including La Velada Web and community platforms in the Afordin ecosystem. I'm part of several developer organizations across the Spanish-speaking world. I believe the best engineers grow by building in public and giving back to the ecosystem that taught them.",
 
     // About — Philosophy
     'about.philosophy.label': 'Technical Philosophy',
@@ -152,7 +152,7 @@ export const ui = {
     // Home — Hero
     'home.hero.subtitle': 'Ingeniero de Software',
     'home.hero.description':
-      'Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, he contribuido a 60+ proyectos open source y soy parte activa de la comunidad developer latinoamericana.',
+      'Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, he contribuido a 60+ proyectos open source y soy parte activa de la comunidad developer hispanohablante.',
 
     // Home — Experience
     'home.experience.heading': '01 / Experiencia Profesional',
@@ -177,7 +177,7 @@ export const ui = {
     'home.projects.heading': '02 / Proyectos Destacados',
     'home.projects.rundev.description':
       'Una PWA que construí y uso diariamente como mi entrenador personal de running. Claude Sonnet 4 genera planes semanales adaptados a mi rendimiento, carreras próximas y necesidades de recuperación. Strava y Garmin se sincronizan automáticamente — puedo registrar entrenamientos tomando una foto de mi reloj (Claude Vision extrae las métricas). Incluye retrospectivas semanales con IA, periodización automática con tapering, gráficas de progresión con regresión lineal y push notifications. 9 Edge Functions, 8 tablas en base de datos, instalable y offline.',
-    'home.projects.rundev.cta': 'Visitar rundev.app',
+    'home.projects.rundev.cta': 'Visitar rundev.pages.dev',
     'home.projects.oss.heading': 'Contribuciones Open Source',
 
     // Home — Skills
@@ -194,7 +194,7 @@ export const ui = {
     'about.hero.p1':
       'Soy Jarrison Cano. Llevo productos de cero a producción — frontend, backend, infraestructura, CI/CD. Lo he hecho en energía, food tech, logística y fintech. Me importa tanto el por qué construimos algo como el cómo.',
     'about.hero.p2':
-      'Fuera del trabajo, he contribuido a 60+ proyectos open source, incluyendo La Velada Web y plataformas comunitarias del ecosistema Afordin. Soy parte de varias organizaciones de desarrolladores en Latinoamérica. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
+      'Fuera del trabajo, he contribuido a 60+ proyectos open source, incluyendo La Velada Web y plataformas comunitarias del ecosistema Afordin. Soy parte de varias organizaciones de desarrolladores en comunidades hispanohablantes. Creo que los mejores ingenieros crecen construyendo en público y devolviendo al ecosistema que les enseñó.',
 
     // About — Philosophy
     'about.philosophy.label': 'Filosofía Técnica',

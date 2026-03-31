@@ -1,60 +1,64 @@
 ---
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const experiences = [
   {
-    company: 'Dash Energy',
-    role: t('home.experience.dash.role'),
-    period: t('home.experience.dash.period'),
-    description: t('home.experience.dash.description'),
+    company: "Dash Energy",
+    role: t("home.experience.dash.role"),
+    period: t("home.experience.dash.period"),
+    description: t("home.experience.dash.description"),
   },
   {
-    company: 'SimplG',
-    role: t('home.experience.simplg.role'),
-    period: t('home.experience.simplg.period'),
-    description: t('home.experience.simplg.description'),
+    company: "Quantil",
+    role: t("home.experience.quantil.role"),
+    period: t("home.experience.quantil.period"),
+    description: t("home.experience.quantil.description"),
   },
   {
-    company: 'Waco Digital Hub',
-    role: t('home.experience.waco.role'),
-    period: t('home.experience.waco.period'),
-    description: t('home.experience.waco.description'),
+    company: "Waco Digital Hub",
+    role: t("home.experience.waco.role"),
+    period: t("home.experience.waco.period"),
+    description: t("home.experience.waco.description"),
   },
   {
-    company: 'Atalaya S.A.S',
-    role: t('home.experience.atalaya.role'),
-    period: t('home.experience.atalaya.period'),
-    description: t('home.experience.atalaya.description'),
+    company: "Atalaya S.A.S",
+    role: t("home.experience.atalaya.role"),
+    period: t("home.experience.atalaya.period"),
+    description: t("home.experience.atalaya.description"),
   },
 ];
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-20">
-  <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
-    {t('home.experience.heading')}
+  <p
+    class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16"
+  >
+    {t("home.experience.heading")}
   </p>
 
   <div class="flex flex-col">
-    {experiences.map((exp) => (
-      <article class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-16 py-12 border-t border-border dark:border-border-dark">
-        <div>
-          <h3 class="text-xl md:text-2xl font-bold mb-1">{exp.company}</h3>
-          <p class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark">
-            {exp.role}
-          </p>
-        </div>
-        <div class="flex flex-col gap-4">
-          <span class="text-xs font-medium tracking-widest text-muted dark:text-muted-dark self-start md:self-end">
-            {exp.period}
-          </span>
-          <p class="text-sm text-muted dark:text-muted-dark leading-relaxed max-w-2xl">
-            {exp.description}
-          </p>
-        </div>
-      </article>
-    ))}
+    {
+      experiences.map((exp) => (
+        <article class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-16 py-12 border-t border-border dark:border-border-dark">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold mb-1">{exp.company}</h3>
+            <p class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark">
+              {exp.role}
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-medium tracking-widest text-muted dark:text-muted-dark self-start md:self-end">
+              {exp.period}
+            </span>
+            <p class="text-sm text-muted dark:text-muted-dark leading-relaxed max-w-2xl">
+              {exp.description}
+            </p>
+          </div>
+        </article>
+      ))
+    }
   </div>
 </section>

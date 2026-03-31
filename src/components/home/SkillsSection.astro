@@ -5,17 +5,19 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const coreStack = [
-  { name: 'React', level: t('home.skills.expert') },
+  { name: 'React / Next.js', level: t('home.skills.expert') },
   { name: 'TypeScript', level: t('home.skills.expert') },
-  { name: 'Python', level: t('home.skills.advanced') },
-  { name: 'JavaScript', level: t('home.skills.expert') },
+  { name: 'Python / Django', level: t('home.skills.advanced') },
+  { name: 'Node.js', level: t('home.skills.advanced') },
+  { name: 'Astro / SvelteKit', level: t('home.skills.advanced') },
 ];
 
 const infrastructure = [
   { name: 'Azure (Static Web Apps, Functions, RBAC)', level: t('home.skills.advanced') },
   { name: 'AWS / GCP', level: t('home.skills.proficient') },
-  { name: 'GitHub Actions', level: t('home.skills.advanced') },
-  { name: 'Vercel / Supabase', level: t('home.skills.advanced') },
+  { name: 'GitHub Actions / CI/CD', level: t('home.skills.advanced') },
+  { name: 'Supabase / Vercel', level: t('home.skills.advanced') },
+  { name: 'Docker', level: t('home.skills.proficient') },
 ];
 ---
 

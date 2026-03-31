@@ -1,10 +1,15 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const tags = ['REACT ROUTER', 'SUPABASE', 'CLAUDE AI'];
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-20">
   <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
-    02 / Featured Projects
+    {t('home.projects.heading')}
   </p>
 
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -21,13 +26,13 @@ const tags = ['REACT ROUTER', 'SUPABASE', 'CLAUDE AI'];
         ))}
       </div>
       <p class="text-sm text-muted dark:text-muted-dark leading-relaxed max-w-lg">
-        A full-stack AI running coach I built for myself and now use daily. RunDev syncs with Garmin, generates personalized weekly training plans using Claude Sonnet 4, and adjusts in real-time based on actual performance. Built entirely in React Router + Supabase Edge Functions + GCP.
+        {t('home.projects.rundev.description')}
       </p>
       <a
         href="#"
         class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase hover:opacity-70 transition-opacity"
       >
-        View Case Study
+        {t('home.projects.viewCaseStudy')}
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
         </svg>

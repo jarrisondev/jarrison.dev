@@ -1,4 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const links = [
   { href: 'https://github.com/jarrisondev', label: 'GITHUB' },
   { href: 'https://www.linkedin.com/in/jarrisoncano/', label: 'LINKEDIN' },
@@ -8,7 +13,7 @@ const links = [
 <footer class="border-t border-border dark:border-border-dark">
   <div class="max-w-[1280px] mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
     <p class="text-xs text-muted dark:text-muted-dark tracking-wide">
-      &copy; 2026 Jarrison Cano. All rights reserved.
+      {t('footer.rights')}
     </p>
     <div class="flex items-center gap-6">
       {links.map(link => (

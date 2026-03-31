@@ -1,27 +1,32 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const categories = [
   {
-    title: 'Frontend',
+    title: t('about.competencies.frontend'),
     skills: ['React / React Router / React Native', 'React Flow', 'Redux', 'Mapbox GL JS', 'TanStack Query', 'Tailwind CSS / Material UI'],
   },
   {
-    title: 'Backend',
+    title: t('about.competencies.backend'),
     skills: ['Django REST Framework', 'Node.js', 'Supabase (Edge Functions, Auth, RLS)', 'REST API Design'],
   },
   {
-    title: 'Cloud & Infrastructure',
+    title: t('about.competencies.cloud'),
     skills: ['Azure (Static Web Apps, Functions, RBAC, AI Search)', 'AWS / GCP', 'GitHub Actions', 'Vercel', 'CI/CD Pipelines'],
   },
   {
-    title: 'Data',
+    title: t('about.competencies.data'),
     skills: ['PostgreSQL', 'MongoDB', 'SQL Server', 'Supabase', 'N+1 Query Optimization'],
   },
   {
-    title: 'Orchestration',
+    title: t('about.competencies.orchestration'),
     skills: ['Agile / Scrum', 'Code Reviews', 'Technical Mentoring', 'Team Leadership (5 engineers)', 'International Collaboration'],
   },
   {
-    title: 'Specialized',
+    title: t('about.competencies.specialized'),
     skills: ['UI Performance Optimization (gigabyte-scale datasets)', 'Interactive Diagramming (React Flow)', 'GIS / Mapping (Mapbox GL JS)', 'AI Integration (Claude Sonnet / Anthropic API)', 'Payment Systems (MercadoPago, Stripe)'],
   },
 ];
@@ -29,7 +34,7 @@ const categories = [
 
 <section class="max-w-[1280px] mx-auto px-6 py-20 border-t border-border dark:border-border-dark">
   <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
-    Core Competencies
+    {t('about.competencies.label')}
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

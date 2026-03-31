@@ -1,23 +1,28 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const entries = [
   {
-    degree: 'Ingeniería de Software (B.Eng.)',
-    school: 'Tecnológico de Antioquia',
-    period: '2023 — 2027 (Expected)',
-    details: 'Relevant coursework: Advanced Databases, Physics, Big Data (MongoDB, CRISP-DM), Legal & Ethical Aspects of Software',
+    degree: t('about.education.degree1'),
+    school: t('about.education.school1'),
+    period: t('about.education.period1'),
+    details: t('about.education.details1'),
   },
   {
-    degree: 'Tecnología en Diseño y Desarrollo Web',
-    school: 'Tecnológico de Antioquia',
-    period: '2020 — 2024',
-    details: 'Associate Degree',
+    degree: t('about.education.degree2'),
+    school: t('about.education.school2'),
+    period: t('about.education.period2'),
+    details: t('about.education.details2'),
   },
 ];
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-20 border-t border-border dark:border-border-dark">
   <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
-    Academic Foundation
+    {t('about.education.label')}
   </p>
 
   <div class="flex flex-col">

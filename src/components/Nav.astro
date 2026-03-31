@@ -1,24 +1,43 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
+import { defaultLang } from '../i18n/ui';
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: '/', label: 'HOME' },
-  { href: '/about', label: 'ABOUT' },
-  { href: '/work', label: 'WORK' },
-  { href: '/contact', label: 'CONTACT' },
+  { href: getLocalizedPath('/', lang), label: t('nav.home') },
+  { href: getLocalizedPath('/about', lang), label: t('nav.about') },
+  { href: getLocalizedPath('/work', lang), label: t('nav.work') },
+  { href: getLocalizedPath('/contact', lang), label: t('nav.contact') },
 ];
 
 function isActive(href: string, current: string): boolean {
-  if (href === '/') return current === '/';
-  return current.startsWith(href);
+  const normalizedHref = href.replace(/\/$/, '') || '/';
+  const normalizedCurrent = current.replace(/\/$/, '') || '/';
+  if (normalizedHref === '/' || normalizedHref === '/es') return normalizedCurrent === normalizedHref;
+  return normalizedCurrent.startsWith(normalizedHref);
 }
+
+// Build the switch-language URL
+function getSwitchLangUrl(): string {
+  const targetLang = lang === 'en' ? 'es' : 'en';
+  let basePath = currentPath;
+  if (lang !== defaultLang) {
+    basePath = currentPath.replace(`/${lang}`, '') || '/';
+  }
+  return getLocalizedPath(basePath, targetLang);
+}
+
+const switchLangUrl = getSwitchLangUrl();
+const switchLangLabel = lang === 'en' ? 'ES' : 'EN';
 ---
 
 <header class="sticky top-0 z-50 bg-surface dark:bg-surface-dark/80 dark:backdrop-blur-md border-b border-border dark:border-border-dark">
   <nav class="max-w-[1280px] mx-auto px-6 h-[72px] flex items-center justify-between">
-    <a href="/" class="text-sm font-bold tracking-wider uppercase text-on-surface dark:text-on-surface-dark hover:opacity-70 transition-opacity">
+    <a href={getLocalizedPath('/', lang)} class="text-sm font-bold tracking-wider uppercase text-on-surface dark:text-on-surface-dark hover:opacity-70 transition-opacity">
       Jarrison Cano
     </a>
 
@@ -40,6 +59,15 @@ function isActive(href: string, current: string): boolean {
           </li>
         ))}
       </ul>
+
+      <a
+        href={switchLangUrl}
+        class="text-xs font-semibold tracking-widest text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark transition-colors"
+        aria-label={`Switch to ${switchLangLabel === 'ES' ? 'Spanish' : 'English'}`}
+      >
+        {switchLangLabel}
+      </a>
+
       <ThemeToggle />
 
       <!-- Mobile menu button -->

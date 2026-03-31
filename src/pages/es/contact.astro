@@ -1,9 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContactHero from '../components/contact/ContactHero.astro';
-import ContactForm from '../components/contact/ContactForm.astro';
-import DirectChannels from '../components/contact/DirectChannels.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Layout from '../../layouts/Layout.astro';
+import ContactHero from '../../components/contact/ContactHero.astro';
+import ContactForm from '../../components/contact/ContactForm.astro';
+import DirectChannels from '../../components/contact/DirectChannels.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

@@ -1,13 +1,20 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <form id="contact-form" class="flex flex-col gap-8">
   <div>
     <label for="name" class="block text-xs font-semibold tracking-widest uppercase mb-3">
-      Your Name
+      {t('contact.form.name')}
     </label>
     <input
       type="text"
       id="name"
       name="name"
-      placeholder="Type here..."
+      placeholder={t('contact.form.namePlaceholder')}
       required
       class="w-full bg-transparent border-b border-border dark:border-border-dark pb-3 text-sm outline-none focus:border-on-surface dark:focus:border-on-surface-dark transition-colors placeholder:text-muted/50 dark:placeholder:text-muted-dark/50"
     />
@@ -15,13 +22,13 @@
 
   <div>
     <label for="email" class="block text-xs font-semibold tracking-widest uppercase mb-3">
-      Email Address
+      {t('contact.form.email')}
     </label>
     <input
       type="email"
       id="email"
       name="email"
-      placeholder="name@example.com"
+      placeholder={t('contact.form.emailPlaceholder')}
       required
       class="w-full bg-transparent border-b border-border dark:border-border-dark pb-3 text-sm outline-none focus:border-on-surface dark:focus:border-on-surface-dark transition-colors placeholder:text-muted/50 dark:placeholder:text-muted-dark/50"
     />
@@ -29,13 +36,13 @@
 
   <div>
     <label for="inquiry" class="block text-xs font-semibold tracking-widest uppercase mb-3">
-      Inquiry
+      {t('contact.form.inquiry')}
     </label>
     <textarea
       id="inquiry"
       name="inquiry"
       rows="4"
-      placeholder="Describe the project..."
+      placeholder={t('contact.form.inquiryPlaceholder')}
       required
       class="w-full bg-transparent border-b border-border dark:border-border-dark pb-3 text-sm outline-none focus:border-on-surface dark:focus:border-on-surface-dark transition-colors resize-none placeholder:text-muted/50 dark:placeholder:text-muted-dark/50"
     ></textarea>
@@ -45,7 +52,7 @@
     type="submit"
     class="self-start inline-flex items-center gap-3 bg-on-surface dark:bg-on-surface-dark text-surface dark:text-surface-dark px-8 py-4 text-xs font-semibold tracking-widest uppercase hover:opacity-90 transition-opacity"
   >
-    Send Inquiry
+    {t('contact.form.submit')}
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
     </svg>

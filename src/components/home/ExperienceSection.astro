@@ -1,35 +1,40 @@
 ---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const experiences = [
   {
     company: 'Dash Energy',
-    role: 'SCIENTIFIC SOFTWARE ENGINEER & TECH LEAD',
-    period: '2022 — PRESENT',
-    description: 'Architecting a petroleum production forecasting platform for renewable energy infrastructure. Spearheading the frontend to multi-region data visualization, leading a team of 5 engineers and implementing advanced observability patterns for distributed data pipelines. Serving 100+ engineers across 4 countries (Argentina, Brazil, Colombia, USA), collaborating with international teams in France and the United States.',
+    role: t('home.experience.dash.role'),
+    period: t('home.experience.dash.period'),
+    description: t('home.experience.dash.description'),
   },
   {
     company: 'SimplG',
-    role: 'FRONTEND ENGINEER (FREELANCE)',
-    period: '2025 — PRESENT',
-    description: 'Building the complete frontend for an LPG plant production simulator. Engineers interact with an interactive node-based diagram (React Flow) to modify equipment parameters and streams in real-time, visualizing plant topology with drag-and-drop connections.',
+    role: t('home.experience.simplg.role'),
+    period: t('home.experience.simplg.period'),
+    description: t('home.experience.simplg.description'),
   },
   {
     company: 'Waco Digital Hub',
-    role: 'SOFTWARE ENGINEER',
-    period: '2022 — 2022',
-    description: 'Directed digital transformation initiatives for enterprise clients. Built GourmetApp from scratch — a TikTok-inspired restaurant menu platform adopted by 400+ restaurants in Madrid. Managed a cross-functional team of 4 engineers while working directly with clients on product decisions.',
+    role: t('home.experience.waco.role'),
+    period: t('home.experience.waco.period'),
+    description: t('home.experience.waco.description'),
   },
   {
     company: 'Atalaya S.A.S',
-    role: 'SOFTWARE DEVELOPER',
-    period: '2021 — 2022',
-    description: 'Developed a cross-platform web and mobile application (React + React Native) for cargo tracking across Colombia. Integrated Colombia\'s government RNDC API to automate cargo dispatch processes, replacing manual manifest recording with automated regulatory compliance.',
+    role: t('home.experience.atalaya.role'),
+    period: t('home.experience.atalaya.period'),
+    description: t('home.experience.atalaya.description'),
   },
 ];
 ---
 
 <section class="max-w-[1280px] mx-auto px-6 py-20">
   <p class="text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-16">
-    01 / Professional Experience
+    {t('home.experience.heading')}
   </p>
 
   <div class="flex flex-col">

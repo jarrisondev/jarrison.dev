@@ -1,31 +1,57 @@
 ---
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import {
+	getLangFromUrl,
+	useTranslations,
+	getLocalizedPath,
+} from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const links = [
+const navLinks = [
+	{ href: getLocalizedPath("/#experience", lang), label: t("footer.experience") },
+	{ href: getLocalizedPath("/#projects", lang), label: t("footer.projects") },
+	{ href: getLocalizedPath("/about", lang), label: t("footer.about") },
+	{ href: getLocalizedPath("/contact", lang), label: t("footer.contact") },
+];
+
+const socialLinks = [
 	{ href: "https://github.com/jarrisondev", label: "GITHUB" },
 	{ href: "https://www.linkedin.com/in/jarrisoncano/", label: "LINKEDIN" },
+	{ href: "https://x.com/jarrisondev", label: "X" },
 ];
 ---
 
 <footer class="border-t border-border dark:border-border-dark">
-  <div class="max-w-[1280px] mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="text-xs text-muted dark:text-muted-dark tracking-wide">
-      {t('footer.rights')}
-    </p>
-    <div class="flex items-center gap-6">
-      {links.map(link => (
-        <a
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark transition-colors"
-        >
-          {link.label}
-        </a>
-      ))}
+  <div class="max-w-[1280px] mx-auto px-6 py-12">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
+      <div class="flex flex-col gap-4">
+        <nav class="flex flex-wrap items-center gap-x-6 gap-y-2">
+          {navLinks.map(link => (
+            <a
+              href={link.href}
+              class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <p class="text-xs text-muted/50 dark:text-muted-dark/50 tracking-wide">
+          {t('footer.rights')}
+        </p>
+      </div>
+      <div class="flex items-center gap-6">
+        {socialLinks.map(link => (
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-medium tracking-widest uppercase text-muted dark:text-muted-dark hover:text-on-surface dark:hover:text-on-surface-dark transition-colors"
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
     </div>
   </div>
 </footer>

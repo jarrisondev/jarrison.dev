@@ -27,10 +27,14 @@ export const ui = {
 
 		// Home — Experience
 		"home.experience.heading": "01 / Professional Experience",
-		"home.experience.dash.role": "SOFTWARE ENGINEER",
-		"home.experience.dash.period": "2022 — PRESENT",
+		"home.experience.dash.role": "TECH LEAD",
+		"home.experience.dash.period": "2025 — PRESENT",
+		"home.experience.dash.prev.role": "SOFTWARE ENGINEER",
+		"home.experience.dash.prev.period": "2022 — 2025",
 		"home.experience.dash.description":
-			"Building a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Leading the frontend team and integrating cross-platform with Kappa Engineering (France & USA). The platform serves 100+ engineers across Argentina, Brazil, Colombia, and the USA. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.",
+			"Leading the full engineering team — frontend, backend, and data. Owning technical direction, sprint planning, and architecture decisions for a platform serving 100+ engineers across Argentina, Brazil, Colombia, and the USA. Driving cross-platform integration with Kappa Engineering (France & USA).",
+		"home.experience.dash.prev.description":
+			"Built a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Led the frontend team and integrated cross-platform with Kappa Engineering. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.",
 		"home.experience.quantil.role": "FRONTEND DEVELOPER (CONTRACT)",
 		"home.experience.quantil.period": "2023 — 2024",
 		"home.experience.quantil.description":
@@ -135,6 +139,10 @@ export const ui = {
 
 		// Footer
 		"footer.rights": "\u00A9 2026 Jarrison Cano. All rights reserved.",
+		"footer.experience": "Experience",
+		"footer.projects": "Projects",
+		"footer.about": "About",
+		"footer.contact": "Contact",
 	},
 
 	es: {
@@ -156,10 +164,14 @@ export const ui = {
 
 		// Home — Experience
 		"home.experience.heading": "01 / Experiencia Profesional",
-		"home.experience.dash.role": "INGENIERO DE SOFTWARE",
-		"home.experience.dash.period": "2022 — PRESENTE",
+		"home.experience.dash.role": "TECH LEAD",
+		"home.experience.dash.period": "2025 — PRESENTE",
+		"home.experience.dash.prev.role": "INGENIERO DE SOFTWARE",
+		"home.experience.dash.prev.period": "2022 — 2025",
 		"home.experience.dash.description":
-			"Construyendo una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Liderando el equipo frontend e integrando cross-platform con Kappa Engineering (Francia y EE.UU.). La plataforma sirve a más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.",
+			"Liderando el equipo completo de ingeniería — frontend, backend y datos. A cargo de la dirección técnica, planificación de sprints y decisiones de arquitectura para una plataforma que sirve a más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. Impulsando la integración cross-platform con Kappa Engineering (Francia y EE.UU.).",
+		"home.experience.dash.prev.description":
+			"Construí una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Lideré el equipo frontend e integré cross-platform con Kappa Engineering. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.",
 		"home.experience.quantil.role": "DESARROLLADOR FRONTEND (CONTRATO)",
 		"home.experience.quantil.period": "2023 — 2024",
 		"home.experience.quantil.description":
@@ -265,5 +277,9 @@ export const ui = {
 		// Footer
 		"footer.rights":
 			"\u00A9 2026 Jarrison Cano. Todos los derechos reservados.",
+		"footer.experience": "Experiencia",
+		"footer.projects": "Proyectos",
+		"footer.about": "Sobre mí",
+		"footer.contact": "Contacto",
 	},
 } as const;

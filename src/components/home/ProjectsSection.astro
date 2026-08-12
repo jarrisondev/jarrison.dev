@@ -4,6 +4,16 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+const ayudaColombiaTags = [
+	"ASTRO",
+	"TYPESCRIPT",
+	"CLOUDFLARE",
+	"SUPABASE",
+	"GOOGLE MAPS",
+	"CLAUDE AI",
+	"SERVERLESS",
+];
+
 const rundevTags = [
 	"REACT 19",
 	"TYPESCRIPT",
@@ -46,6 +56,41 @@ const ossProjects = [
   <p class="animate-in text-xs font-medium tracking-[0.2em] uppercase text-muted dark:text-muted-dark mb-10 md:mb-16">
     {t('home.projects.heading')}
   </p>
+
+  <div class="animate-in grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12 md:mb-20">
+    <a href="https://ayudacolombia.org" target="_blank" rel="noopener noreferrer" class="group block rounded-lg overflow-hidden bg-surface-alt dark:bg-surface-alt-dark lg:order-2">
+      <img
+        src="/ayudacolombia-preview.png"
+        alt="Ayuda Colombia — información para actuar tras el terremoto: acopios, mascotas, personas y recursos"
+        class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
+        loading="lazy"
+      />
+    </a>
+
+    <div class="flex flex-col gap-6 lg:order-1">
+      <div class="flex flex-wrap gap-2">
+        {ayudaColombiaTags.map(tag => (
+          <span class="text-[10px] font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-border dark:border-border-dark text-muted dark:text-muted-dark">
+            {tag}
+          </span>
+        ))}
+      </div>
+      <p class="text-sm text-muted dark:text-muted-dark leading-relaxed max-w-lg">
+        {t('home.projects.ayudacolombia.description')}
+      </p>
+      <a
+        href="https://ayudacolombia.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase hover:opacity-70 transition-opacity"
+      >
+        {t('home.projects.ayudacolombia.cta')}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
 
   <div class="animate-in grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
     <a href="https://rundev.pages.dev" target="_blank" rel="noopener noreferrer" class="group block rounded-lg overflow-hidden bg-surface-alt dark:bg-surface-alt-dark">

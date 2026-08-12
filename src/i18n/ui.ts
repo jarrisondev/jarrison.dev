@@ -53,6 +53,9 @@ export const ui = {
 		"home.projects.rundev.description":
 			"A PWA I built and use daily as my personal running coach. Claude Sonnet 4 generates weekly training plans adapted to my performance, upcoming races, and recovery needs. Strava and Garmin sync automatically — I can even log runs by taking a photo of my watch (Claude Vision extracts the metrics). Includes weekly AI retrospectives, automatic periodization with tapering, progression charts with linear regression, and push notifications. 9 Edge Functions, 8 database tables, fully installable offline.",
 		"home.projects.rundev.cta": "Visit rundev.pages.dev",
+		"home.projects.ayudacolombia.description":
+			"A civic platform I designed, built, and shipped to production during the August 2026 earthquake in Colombia. It gathers the scattered information people need to act in one place: verified donation drop-off points with a map and distance sorting, lost & found pets, missing-person search (routing to official channels instead of fragmenting reports), and an anti-fraud resource directory. At its core is a trust and freshness model that treats information as something that decays over time — every card shows its source, verification status, and how recently it was confirmed. Features AI autofill from a photo of a flyer (Claude Vision + structured output), Canvas-generated shareable cards, community submissions with human review, and a full admin panel. Static-first and serverless (Astro + Cloudflare Pages Functions + Supabase with RLS): fast, cheap, and resilient in the middle of an emergency. Volunteer-run, non-profit, and it never handles money.",
+		"home.projects.ayudacolombia.cta": "Visit ayudacolombia.org",
 		"home.projects.oss.heading": "Open Source Contributions",
 
 		// Home — Skills
@@ -190,6 +193,9 @@ export const ui = {
 		"home.projects.rundev.description":
 			"Una PWA que construí y uso diariamente como mi entrenador personal de running. Claude Sonnet 4 genera planes semanales adaptados a mi rendimiento, carreras próximas y necesidades de recuperación. Strava y Garmin se sincronizan automáticamente — puedo registrar entrenamientos tomando una foto de mi reloj (Claude Vision extrae las métricas). Incluye retrospectivas semanales con IA, periodización automática con tapering, gráficas de progresión con regresión lineal y push notifications. 9 Edge Functions, 8 tablas en base de datos, instalable y offline.",
 		"home.projects.rundev.cta": "Visitar rundev.pages.dev",
+		"home.projects.ayudacolombia.description":
+			"Plataforma ciudadana que diseñé, construí y puse en producción durante el terremoto de agosto de 2026 en Colombia. Reúne en un solo lugar la información dispersa que la gente necesita para actuar: puntos de acopio verificados con mapa y orden por cercanía, mascotas perdidas y encontradas, búsqueda de personas (derivando a los canales oficiales para no fragmentar reportes) y un directorio de recursos con guía antifraude. Su núcleo es un modelo de confianza y frescura que trata la información como algo que caduca — cada tarjeta muestra su fuente, estado de verificación y hace cuánto se confirmó. Incluye autocompletado con IA desde la foto de un volante (Claude Vision + salida estructurada), tarjetas compartibles generadas con Canvas, propuestas de la comunidad con revisión humana y un panel de administración completo. Static-first y serverless (Astro + Cloudflare Pages Functions + Supabase con RLS): rápida, barata y resiliente en plena emergencia. Voluntaria, sin ánimo de lucro y sin recibir dinero.",
+		"home.projects.ayudacolombia.cta": "Visitar ayudacolombia.org",
 		"home.projects.oss.heading": "Contribuciones Open Source",
 
 		// Home — Skills

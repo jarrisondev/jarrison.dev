@@ -23,7 +23,7 @@ export const ui = {
 		// Home — Hero
 		"home.hero.subtitle": "Software Engineer",
 		"home.hero.description":
-			"100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, have contributed to 60+ open source projects, and I'm an active part of the developer community across the Spanish-speaking world.",
+			"5+ years building production applications. 100+ engineers across 4 countries use what my team builds at Dash Energy every day. Before that, 400+ restaurants in Madrid ran on software I shipped from scratch. I work across the full stack, have contributed to 60+ open source projects, and I'm an active part of the developer community across the Spanish-speaking world.",
 
 		// Home — Experience
 		"home.experience.heading": "01 / Professional Experience",
@@ -32,21 +32,21 @@ export const ui = {
 		"home.experience.dash.prev.role": "SOFTWARE ENGINEER",
 		"home.experience.dash.prev.period": "2022 — 2025",
 		"home.experience.dash.description":
-			"Leading the full engineering team — frontend, backend, and data. Owning technical direction, sprint planning, and architecture decisions for a platform serving 100+ engineers across Argentina, Brazil, Colombia, and the USA. Driving cross-platform integration with Kappa Engineering (France & USA).",
+			"Leading the entire platform — frontend, backend, data, and Azure infrastructure — and owning the product's architecture, security, and legal decisions for 100+ engineers across Argentina, Brazil, Colombia, and the USA. Led security audits for enterprise clients (Entra ID, log retention, RPO/RTO, GDPR) and currently leading the integration of AI capabilities into the product. Driving cross-platform integration with Kappa Engineering (France & USA).",
 		"home.experience.dash.prev.description":
-			"Built a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Led the frontend team and integrated cross-platform with Kappa Engineering. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.",
+			"Built a production forecasting platform for oil wells — decline models, statistical analysis, economic calculations, multi-currency and multi-unit support. Led the frontend team, optimized the rendering of thousands of historical well data series without degrading the experience, and grew from frontend to full stack by taking over the Django backend. Also built the complete frontend for SimplG, an LPG plant simulator for an allied company, using React Flow for interactive node-based diagrams.",
 		"home.experience.quantil.role": "FRONTEND DEVELOPER (CONTRACT)",
 		"home.experience.quantil.period": "2023 — 2024",
 		"home.experience.quantil.description":
-			"Built a document search application for a major energy sector client. Thousands of vectorized judicial documents, filterable by ID, tax number, city, and custom criteria. React.js frontend on Microsoft Azure infrastructure.",
-		"home.experience.waco.role": "SOFTWARE ENGINEER",
-		"home.experience.waco.period": "2022 — 2023",
+			"Built an ETL that extracted, vectorized, and indexed every document from Colombia's Judicial Branch with Azure AI Search, powering a legal-history search platform for a major energy sector client. Developed the React search frontend with multi-field queries (national ID, tax number, city) that renders matches in a PDF generated on the client.",
+		"home.experience.waco.role": "SOFTWARE DEPARTMENT LEAD",
+		"home.experience.waco.period": "2022",
 		"home.experience.waco.description":
-			"Built GourmetApp from scratch — a TikTok-style restaurant menu platform that grew to 400+ restaurants across Madrid. Handled storage optimization and low-latency content delivery on AWS and Google Cloud. Led a team of 4 from idea to production. Also maintained e-commerce platforms for supermarket chains. Returned in 2023 as freelance to build the corporate website and an interactive utility calculator for Vatia, a Colombian energy company.",
-		"home.experience.atalaya.role": "SOFTWARE DEVELOPER",
+			"Joined as a Frontend Engineer and took over leadership of the software department within a month — owning the company's projects, developers, and clients. Shipped GourmetApp to production, a TikTok-style restaurant menu platform adopted by 400+ restaurants across Madrid, leading a team of 4 and optimizing content delivery on AWS and GCP. Also managed e-commerce support for 3 supermarket chains and the landing page and solar calculator for Vatia, a Colombian energy company.",
+		"home.experience.atalaya.role": "FRONTEND DEVELOPER",
 		"home.experience.atalaya.period": "2021 — 2022",
 		"home.experience.atalaya.description":
-			"Built a cross-platform cargo tracking app (React + React Native) used across Colombia. Integrated the government's RNDC API to automate cargo dispatch manifests, replacing a fully manual process with automated regulatory compliance.",
+			"Built Atalaya's national freight management platform: a mobile app for drivers (React Native) and a web platform for logistics operators (React), on Firebase and Google Cloud. Integrated the Ministry of Transport's RNDC API to automatically generate and upload each trip's manifests and documents, and solved vehicle GPS tracking through provider APIs.",
 
 		// Home — Projects
 		"home.projects.heading": "02 / Featured Projects",
@@ -98,10 +98,10 @@ export const ui = {
 
 		// About — Education
 		"about.education.label": "Academic Foundation",
-		"about.education.degree1": "Ingeniería en Software (B.Eng.)",
+		"about.education.degree1": "Ingeniería de Software (B.Eng.)",
 		"about.education.school1": "Tecnológico de Antioquia (TdeA)",
 		"about.education.period1": "2023 — PRESENT (8th Semester)",
-		"about.education.details1": "",
+		"about.education.details1": "Expected graduation: 2027",
 		"about.education.degree2": "Tecnología en Diseño y Desarrollo Web",
 		"about.education.school2": "Tecnológico de Antioquia (TdeA)",
 		"about.education.period2": "2020 — 2024",
@@ -163,7 +163,7 @@ export const ui = {
 		// Home — Hero
 		"home.hero.subtitle": "Ingeniero de Software",
 		"home.hero.description":
-			"Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, he contribuido a 60+ proyectos open source y soy parte activa de la comunidad developer hispanohablante.",
+			"5+ años construyendo aplicaciones en producción. Lo que mi equipo construye en Dash Energy lo usan más de 100 ingenieros en 4 países, cada día. Antes, construí desde cero una app que adoptaron más de 400 restaurantes en Madrid. Soy fullstack, he contribuido a 60+ proyectos open source y soy parte activa de la comunidad developer hispanohablante.",
 
 		// Home — Experience
 		"home.experience.heading": "01 / Experiencia Profesional",
@@ -172,21 +172,21 @@ export const ui = {
 		"home.experience.dash.prev.role": "INGENIERO DE SOFTWARE",
 		"home.experience.dash.prev.period": "2022 — 2025",
 		"home.experience.dash.description":
-			"Liderando el equipo completo de ingeniería — frontend, backend y datos. A cargo de la dirección técnica, planificación de sprints y decisiones de arquitectura para una plataforma que sirve a más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. Impulsando la integración cross-platform con Kappa Engineering (Francia y EE.UU.).",
+			"Lidero toda la plataforma — frontend, backend, datos e infraestructura Azure — y tomo las decisiones de arquitectura, seguridad y legales del producto, usado por más de 100 ingenieros en Argentina, Brasil, Colombia y EE.UU. Lideré auditorías de seguridad de clientes enterprise (Entra ID, retención de logs, RPO/RTO, GDPR) y hoy lidero la incorporación de capacidades de IA al producto. Impulsando la integración cross-platform con Kappa Engineering (Francia y EE.UU.).",
 		"home.experience.dash.prev.description":
-			"Construí una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Lideré el equipo frontend e integré cross-platform con Kappa Engineering. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.",
+			"Construí una plataforma de pronóstico de producción para pozos petroleros — modelos de declinación, análisis estadístico, cálculos económicos, soporte multi-moneda y multi-unidad. Lideré el equipo frontend, optimicé el renderizado de miles de series históricas de pozos sin degradar la experiencia y pasé de frontend a full stack asumiendo el backend en Django. También construí el frontend completo de SimplG, un simulador de plantas de GLP para una empresa aliada, usando React Flow para diagramas interactivos basados en nodos.",
 		"home.experience.quantil.role": "DESARROLLADOR FRONTEND (CONTRATO)",
 		"home.experience.quantil.period": "2023 — 2024",
 		"home.experience.quantil.description":
-			"Construí una aplicación de búsqueda de documentos para un cliente importante del sector energético. Miles de documentos judiciales vectorizados, filtrables por cédula, NIT, ciudad y criterios personalizados. Frontend en React.js sobre infraestructura de Microsoft Azure.",
-		"home.experience.waco.role": "INGENIERO DE SOFTWARE",
-		"home.experience.waco.period": "2022 — 2023",
+			"Construí un ETL que extrajo, vectorizó e indexó con Azure AI Search todos los documentos de la Rama Judicial de Colombia, para una plataforma de consulta de historiales legales de un cliente del sector energético. Desarrollé el buscador en React con consultas por múltiples datos (cédula, NIT, ciudad) que renderiza las coincidencias en un PDF generado en el front.",
+		"home.experience.waco.role": "LÍDER DEL DEPARTAMENTO DE SOFTWARE",
+		"home.experience.waco.period": "2022",
 		"home.experience.waco.description":
-			"Construí GourmetApp desde cero — una plataforma estilo TikTok para menús de restaurantes que creció a más de 400 restaurantes en Madrid. Manejé optimización de almacenamiento y entrega de contenido de baja latencia en AWS y Google Cloud. Lideré un equipo de 4 desde la idea hasta producción. También mantuve plataformas e-commerce para cadenas de supermercados. Volví en 2023 como freelance para construir el sitio corporativo y una calculadora interactiva de servicios para Vatia, empresa del sector energético colombiano.",
-		"home.experience.atalaya.role": "DESARROLLADOR DE SOFTWARE",
+			"Ingresé como Frontend Engineer y al mes asumí el liderazgo del departamento de software — a cargo de los proyectos, desarrolladores y clientes de la empresa. Saqué a producción GourmetApp, plataforma de menús estilo TikTok adoptada por más de 400 restaurantes en Madrid, liderando un equipo de 4 y optimizando la entrega de contenido en AWS y GCP. También gestioné el soporte e-commerce de 3 cadenas de supermercados y la landing y calculadora solar de Vatia, empresa del sector energético colombiano.",
+		"home.experience.atalaya.role": "DESARROLLADOR FRONTEND",
 		"home.experience.atalaya.period": "2021 — 2022",
 		"home.experience.atalaya.description":
-			"Construí una app multiplataforma de rastreo de carga (React + React Native) usada en toda Colombia. Integré la API gubernamental RNDC para automatizar manifiestos de despacho de carga, reemplazando un proceso completamente manual con cumplimiento regulatorio automatizado.",
+			"Desarrollé la plataforma nacional de gestión de fletes de Atalaya: app móvil para conductores (React Native) y plataforma web para las operadoras logísticas (React), sobre Firebase y Google Cloud. Integré la API RNDC del Ministerio de Transporte para generar y cargar automáticamente los manifiestos y documentos de cada viaje, y resolví el rastreo GPS de los vehículos vía APIs de los proveedores.",
 
 		// Home — Projects
 		"home.projects.heading": "02 / Proyectos Destacados",
@@ -238,10 +238,10 @@ export const ui = {
 
 		// About — Education
 		"about.education.label": "Formación Académica",
-		"about.education.degree1": "Ingeniería en Software (B.Eng.)",
+		"about.education.degree1": "Ingeniería de Software (B.Eng.)",
 		"about.education.school1": "Tecnológico de Antioquia (TdeA)",
 		"about.education.period1": "2023 — PRESENTE (8vo Semestre)",
-		"about.education.details1": "",
+		"about.education.details1": "Grado esperado: 2027",
 		"about.education.degree2": "Tecnología en Diseño y Desarrollo Web",
 		"about.education.school2": "Tecnológico de Antioquia (TdeA)",
 		"about.education.period2": "2020 — 2024",

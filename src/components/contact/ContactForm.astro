@@ -68,6 +68,6 @@ const t = useTranslations(lang);
     const inquiry = (form.querySelector('#inquiry') as HTMLTextAreaElement).value;
     const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${inquiry}`);
-    window.location.href = `mailto:jarrison.cano@hotmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:me@jarrison.dev?subject=${subject}&body=${body}`;
   });
 </script>
